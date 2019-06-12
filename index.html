@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            background:grey;
+            display: flex;
+            margin: 0;
+        }
+        
+         header{
+            margin:0;
+            height:56px;
+            width:100%;
+            background:#4876c3 ;
+        }
+        
+        .container{
+/*            display: inline-flex;*/
+            margin: 8px 0;
+            flex-direction: row-reverse;
+            
+        }
+        
+        .material-icons{
+            color: white;
+/*            margin-top:20px ;*/
+        }
+        
+        .form{ 
+            
+/*            width:10px;*/
+/*            text-align: right;*/
+/*         flex-direction: row-reverse;*/
+/*            align-content: flex-end;*/
+        }
+        
+/*
+        .form:hover{
+            width:700px;
+            background: white;
+            z-index: 1000;
+            
+        }
+*/
+
+        input[type=text]{
+/*            display: flex;*/
+            
+            position:relative;
+            border: 0 solid white;
+            background:white;
+            width:1px;
+            height: 100%;
+            margin:0;
+            padding: 0;
+              box-sizing: border-box;
+               cursor:text;
+     -webkit-transition: width 2s ease-in-out;
+  transition: width 4s;
+        left:500px;
+/*             align-content: flex-end;*/
+        }
+        
+        input[type=text]:hover{
+            width:700px;
+/*            background: white;*/
+/*            position: relative;*/
+             align-content: flex-end;
+        }
+        
+        .header_search{
+            
+        }
+       
+    </style>
+</head>
+<body>
+   
+    <header>
+        <div class="container">
+            <div class="form | material-icons ">search
+                <input type="text" class="header_search">
+            </div>            
+        </div>
+    </header>
+</body>
+</html>
