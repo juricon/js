@@ -11,6 +11,7 @@
 
 // Решение
 
+
 /* не удалять */
 f(2); // 8
 f('Content'); // Error: parameter is not a number type
