@@ -10,6 +10,16 @@
  */
 
 // Решение
+let a = 0;
+function f(a){
+if (typeof a !== 'number'){
+  alert('a - должно быть числом');
+} 
+    
+    const pow = a * a * a;
+    console.log(pow);   
+  }
+  f(2)
 
 
 /* не удалять */
