@@ -11,9 +11,20 @@
 
 // Решение
 
-/* не удалять */
-f(9, 3, 2); // 3
-f('s', 9, 3); // Error: all parameters type should be a Number
+function f(a, b, c){
+    let calc = (a - b) / c;
+    if (isNaN (a, b, c)){
+        return 'Error: all parameters type should be a Number';
+       } 
+    return calc;
+    
+}
+console.log(f(9, 3, 2));
+console.log(f('s', 9, 3));
 
-export { f };
+/* не удалять */
+// f(9, 3, 2); // 3
+// f('s', 9, 3); // Error: all parameters type should be a Number
+
+// export { f };
 /* не удалять */
