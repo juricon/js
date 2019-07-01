@@ -11,6 +11,16 @@
 //  */
 
 // Решение
+function isEven(a){
+    if(typeof a !== 'number'){
+        console.log('Error: parameter type is not a Number'); 
+    } else if(a % 2 === 0){
+        console.log(true);
+    } else{
+        console.log(false);
+    }
+}
+isEven(4)
 
 /* не удалять */
 // isEven(3); // false
