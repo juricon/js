@@ -23,13 +23,13 @@ get(){
 // exports.person = person;
 
 // teacher solution:
-Dima Vakatsiienko
-Змінено
-26 черв. 2019 р. (Dima Vakatsiienko)
-Створено
-26 черв. 2019 р.
-Без опису
-Користувачі з правами перегляду можуть завантажувати файл
+// Dima Vakatsiienko
+// Змінено
+// 26 черв. 2019 р. (Dima Vakatsiienko)
+// Створено
+// 26 черв. 2019 р.
+// Без опису
+// Користувачі з правами перегляду можуть завантажувати файл
 const person = {
     get salary() {
         const today = new Date();
