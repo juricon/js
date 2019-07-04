@@ -14,7 +14,7 @@ get(){
          return 'good salary';
    }
 });   
- console.log(person.salary); //it'sa  bad solution because  not in every month the same amount of days.
+ console.log(person.salary); //it's a  bad solution because  not in every month the same amount of days.
        
  // Решение
 
