@@ -7,12 +7,11 @@
 const person = {};
 Object.defineProperty(person, 'salary', {
 get(){
-      var d = new Date();
+       var d = new Date();
       if((d.getDate() > 20)){
-         return 'good salary';
-      } else if((d.getDate() < 20)){
          return 'bad salary';
-      }
+      } else if((d.getDate() < 20)){
+         return 'good salary';
    }
 });   
  console.log(person.salary);
