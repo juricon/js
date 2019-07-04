@@ -21,3 +21,31 @@ get(){
 // person.salary; // good salary
 
 // exports.person = person;
+
+// teacher solution:
+Dima Vakatsiienko
+Змінено
+26 черв. 2019 р. (Dima Vakatsiienko)
+Створено
+26 черв. 2019 р.
+Без опису
+Користувачі з правами перегляду можуть завантажувати файл
+const person = {
+    get salary() {
+        const today = new Date();
+        const currentYear = today.getFullYear();
+        const currentMonth = today.getMonth() + 1;
+        const currentDay = today.getDate();
+        const daysInCurrentMonth = new Date(
+            currentYear,
+            currentMonth,
+            0,
+        ).getDate();
+
+        return daysInCurrentMonth - currentDay > 20
+            ? 'good salary'
+            : 'bad salary';
+    },
+};
+
+console.log(person.salary);
