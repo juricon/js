@@ -42,11 +42,12 @@ function some(array, callback) {
     return status;
 }
 
-const array = [1, 3, 7, 1];
+const array = [1, 2, 'Добро пожаловать.', 4, 5, 6];
 
 const result = some(array, function(item, i, array) {
-    return item % 2 === 0;
+    return typeof item === 'string';
 });
+
 
 console.log(result);
 
