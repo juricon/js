@@ -40,7 +40,9 @@ function createArray(value, length){
    return arr1;
    
 }
-console.log(result); // [ x, x, x, x, x ]
+console.log(result); // [ x, x, x, x, x ] // Я так и не смог вывести значения в  архиве без ' ',
+//получилось вот так  [ 'x', 'x', 'x', 'x', 'x' ] есть ли выход?
+
 // createArray('v', 2);
 // in any case it shows result [ 'x', 'x', 'x', 'x', 'x' ]
 
@@ -48,5 +50,4 @@ console.log(result); // [ x, x, x, x, x ]
 
 // const result = createArray('x', 5);
 
-// console.log(result); // [ x, x, x, x, x ] // Я так и не смог вывести значения в  архиве без ' ',
-//получилось вот так  [ 'x', 'x', 'x', 'x', 'x' ] есть ли выход?
+// console.log(result); // [ x, x, x, x, x ] 
