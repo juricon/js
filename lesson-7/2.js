@@ -18,8 +18,46 @@
 //  * - Если на каком-то уровне было найдено не число и не массив.
 //  */
 
-// // Решение
+// // Решение by teacher!!!
+function flatten(array) {
+    const result = [];
 
+    const flattenDeep = (array, result) => {
+        for (let count = 0; count < array.length; count++) {
+            const current = array[count];
+            console.log(current);
+
+            if (!(typeof current === 'number' || Array.isArray(current))) {
+                throw new Error('Some item type is not a Number');
+            }
+
+            if (Array.isArray(current)) {
+                flattenDeep(current, result);
+            } else {
+                result.push(current);
+            }
+        }
+
+        return result;
+    };
+
+    return flattenDeep(array, result);
+}
+
+function collect(sourceArray) {
+    if (!Array.isArray(sourceArray)) {
+        throw new Error(
+            'collect function first argument should be an array type.',
+        );
+    }
+    const flattened = flatten(sourceArray);
+
+    return flattened.reduce((prev, current) => {
+        return prev + current;
+    }, 0);
+}
+const array1 = [[[1, 2], [1, 2]], [[2, 1], [1, 2]]];
+console.log(collect(array1)); // 12
 
 
 // const array1 = [[[1, 2], [1, 2]], [[2, 1], [1, 2]]];
